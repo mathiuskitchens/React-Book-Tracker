@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+* {
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tron-line {
+  border: 0.5px solid #66c4ed;
+  width: 55%;
+  margin-left: 1rem;
+  margin-top: -1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.add-book-info {
+  margin: 1rem;
+  background-color: #2d2d2d;
+  border-radius: 11px;
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  margin-bottom: 0.8rem;
+  margin-top: 0.4rem;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  border: 1px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #66c4ed;
+  font-size: 1rem;
+  width: 13rem;
+}
+
+button {
+  font-style: none;
+  font-family: "Space Grotesk", sans-serif;
+  padding: 5px 15px;
+  position: absolute;
+  top: 145px;
+  right: 45px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px;
+  box-shadow: 1px 1px 5px cyan;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 8px cyan;
 }
